@@ -1,0 +1,71 @@
+@import '../../styles/vars.scss';
+
+.notes-button {
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px 15px;
+  background: $primary;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: $white;
+  outline: none;
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background: lighten($primary, 5%)
+  }
+
+  &:focus, &:active {
+    background: darken($primary, 7%)
+  }
+
+  &.lg {
+    padding: 9px 22px;
+  }
+
+  &.btn-white {
+    background: $white
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  & + & {
+    margin-left: 5px;
+  }
+}
+
+.dark {
+  .notes-button.btn-white {
+    background: transparent;
+  }
+}
+
+.notes-button-fab {
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  padding: 18px;
+  border-radius: 50%;
+  background: $primary;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  transition: background 300ms ease-in-out;
+
+  img {
+    vertical-align: middle;
+  }
+
+  &:hover {
+    background: lighten($primary, 5%)
+  }
+
+  &:focus, &:active {
+    background: darken($primary, 7%)
+  }
+}

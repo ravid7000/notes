@@ -1,0 +1,39 @@
+@import '../../styles/vars.scss';
+
+.add-note-textarea {
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  background: $white;
+  border-radius: 4px;
+  padding: 30px;
+
+  textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: $white;
+    outline: none;
+    height: 30px;
+    color: $body-text;
+    max-width: 100%;
+    min-height: 70px;
+    resize: none;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      color: $text-muted;
+    }
+  }
+}
+
+.dark {
+  .add-note-textarea {
+    background: $notes-bg-dark;
+
+    textarea {
+      background: $notes-bg-dark;
+      color: $white;
+    }
+  }
+}

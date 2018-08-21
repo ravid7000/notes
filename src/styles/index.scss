@@ -1,0 +1,18 @@
+@import './vars';
+
+html, body {
+  font-size: 100%;
+}
+
+body {
+  font-family: $body-font-family;
+  color: $body-text;
+  background: $body-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.dark {
+    background: $body-bg-dark;
+    color: $body-text-dark;
+  }
+}

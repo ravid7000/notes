@@ -1,0 +1,48 @@
+@import '../../styles/vars.scss';
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  background: $white;
+  border-radius: 4px;
+  padding: 10px;
+
+  input {
+    flex: 1;
+    display: block;
+    width: 100%;
+    border: 0;
+    background: $white;
+    outline: none;
+    height: 30px;
+    color: $body-text;
+
+    &::placeholder {
+      color: $text-muted;
+    }
+  }
+
+  .search-box-left-icon {
+    flex: 0 0 60px;
+    max-width: 60px;
+    text-align: center;
+
+    img {
+      width: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.dark {
+  .search-box {
+    background: $notes-bg-dark;
+
+    input {
+      background: $notes-bg-dark;
+      color: $white;
+    }
+  }
+}

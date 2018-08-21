@@ -1,0 +1,19 @@
+.notes-header {
+  padding: 30px 30px 60px 30px;
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      vertical-align: bottom;
+    }
+
+    .logo-text {
+      padding-left: 15px;
+      vertical-align: middle;
+    }
+  }
+}

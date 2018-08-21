@@ -1,0 +1,25 @@
+{
+  "workbench.colorTheme": "Popping and Locking",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 36,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "'Operator Mono', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "git.autofetch": true,
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "vue"
+  ],
+  "editor.tabSize": 2,
+  "materialTheme.fixIconsRunning": false,
+  "window.zoomLevel": 0,
+  "window.title": "${activeEditorShort}${separator}${activeEditorMedium}${separator}${rootName}",
+  "editor.formatOnSave": false,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.fontFamily": "'Operator Mono', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.letterSpacing": 1
+}
