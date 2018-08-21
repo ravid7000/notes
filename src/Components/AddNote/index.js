@@ -11,7 +11,7 @@ const AddNote = props => {
         {props.children}
       </textarea>
       <div className="controls">
-        <Button lg onClick={props.submit}>Save</Button>
+        <Button lg onClick={props.submit}>Add</Button>
         <ButtonWhite lg onClick={props.cancel}>
           <img src={TrashIcon} alt=""/>
         </ButtonWhite>

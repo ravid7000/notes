@@ -143,16 +143,22 @@ class App extends Component {
                   cancel={this.cancelAddNote}
                 />
               }
-              {_.map(notes, (part, index) => (
-                <Note
-                  key={index}
-                  completed={part.completed}
-                  complete={() => this.handleNoteCompleted(part)}
-                  removeNote={() => this.handleRemoveNote(part)}
-                >
-                  {part.text}
-                </Note>
-              ))}
+              {
+                notes.length
+                ? _.map(notes, (part, index) => (
+                  <Note
+                    key={index}
+                    completed={part.completed}
+                    complete={() => this.handleNoteCompleted(part)}
+                    removeNote={() => this.handleRemoveNote(part)}
+                  >
+                    {part.text}
+                  </Note>
+                ))
+                : <div className="no-notes">
+                  Click + to add new note.
+                </div>
+              }
             </div>
             <div className="add-button">
               <ButtonFab onClick={() => toggleAddNewButton(true)}>

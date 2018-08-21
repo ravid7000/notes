@@ -7,8 +7,8 @@ import Logo from '../../assets/logo.svg'
 const Header = props => {
   return (
     <div className="notes-header">
-      <div className="logo" onClick={props.logoClick}>
-        <img src={Logo} />
+      <div className="logo">
+        <img src={Logo} onClick={props.logoClick} />
         <span className="logo-text">
           Notes
         </span>

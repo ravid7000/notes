@@ -179,25 +179,24 @@ module.exports = {
     }, {
       reload: false
     }),
-    isProd
-      && new CopyWebpackPlugin([
-        {
-          from: 'public/assets',
-          to: 'assets'
-        },
-        {
-          from: 'public/images',
-          to: 'images'
-        },
-        {
-          from: 'public/manifest.json',
-          to: 'manifest.json'
-        },
-        {
-          from: 'public/sw.js',
-          to: 'sw.js'
-        },
-      ]),
+    new CopyWebpackPlugin([
+      {
+        from: 'public/assets',
+        to: 'assets'
+      },
+      {
+        from: 'public/images',
+        to: 'images'
+      },
+      {
+        from: 'public/manifest.json',
+        to: 'manifest.json'
+      },
+      {
+        from: 'public/sw.js',
+        to: 'sw.js'
+      },
+    ]),
     new ProgressPlugin(true)
   ]
 }

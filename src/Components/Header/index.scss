@@ -1,13 +1,21 @@
+@import '../../styles/vars.scss';
+
 .notes-header {
-  padding: 30px 30px 60px 30px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 30px 30px 132px 30px;
+  z-index: 150;
+  background: $body-bg;
 
   .logo {
     font-size: 1.4rem;
     font-weight: 700;
-    cursor: pointer;
 
     img {
       width: 30px;
+      cursor: pointer;
       vertical-align: bottom;
     }
 
@@ -15,5 +23,11 @@
       padding-left: 15px;
       vertical-align: middle;
     }
+  }
+}
+
+.dark {
+  .notes-header {
+    background: $body-bg-dark;
   }
 }
