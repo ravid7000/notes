@@ -1,5 +1,17 @@
 @import '../../styles/vars.scss';
 
+.search-box-container {
+  position: fixed;
+  width: 450px;
+  left: 50%;
+  max-width: 100%;
+  top: 125px;
+  z-index: 200;
+  transform: translateX(-50%);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .search-box {
   display: flex;
   flex-wrap: wrap;
@@ -8,12 +20,6 @@
   background: $white;
   border-radius: 4px;
   padding: 10px;
-  position: fixed;
-  width: 420px;
-  left: 50%;
-  margin-left: -210px;
-  top: 125px;
-  z-index: 200;
 
   input {
     flex: 1;

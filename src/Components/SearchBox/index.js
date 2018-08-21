@@ -44,22 +44,24 @@ class SearchBox extends React.Component {
     const { props } = this;
 
     return (
-      <div className="search-box">
-        <div className="search-box-left-icon">
-          <img src={SearchIcon} />
-        </div>
-        <input
-          ref={e => this.input = e}
-          {...props.inputProps}
-          onKeyDown={e => this.handleInput(e)}
-        />
-        {props.showEnter &&
-          <div className="search-box-right-icon">
-            <Button onClick={props.enterPress} tabIndex={-1}>
-              <img src={EnterKeyIcon} />
-            </Button>
+      <div className="search-box-container">
+        <div className="search-box">
+          <div className="search-box-left-icon">
+            <img src={SearchIcon} />
           </div>
-        }
+          <input
+            ref={e => this.input = e}
+            {...props.inputProps}
+            onKeyDown={e => this.handleInput(e)}
+          />
+          {props.showEnter &&
+            <div className="search-box-right-icon">
+              <Button onClick={props.enterPress} tabIndex={-1}>
+                <img src={EnterKeyIcon} />
+              </Button>
+            </div>
+          }
+        </div>
       </div>
     )
   }
